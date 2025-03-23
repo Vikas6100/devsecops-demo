@@ -102,7 +102,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN }}
       
-      
       - name: Extract metadata for Docker
         id: meta
         uses: docker/metadata-action@v5
