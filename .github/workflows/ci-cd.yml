@@ -7,6 +7,8 @@ on:
       - 'kubernetes/deployment.yaml'  # Ignore changes to this file to prevent loops
   pull_request:
     branches: [ main ]
+permissions:
+    packages: write  # Allow GitHub Actions to push to GHCR
 
 jobs:
   test:
